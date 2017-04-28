@@ -1,0 +1,38 @@
+{
+    "name":"vue-helpers",
+    "version":"0.0.0",
+    "author":"Eric Peterson",
+    "location":"elpete/vue-helpers#v0.0.0",
+    "homepage":"https://github.com/elpete/vue-helpers",
+    "documentation":"https://github.com/elpete/vue-helpers",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/elpete/vue-helpers"
+    },
+    "bugs":"https://github.com/elpete/vue-helpers/issues",
+    "slug":"vue-helpers",
+    "shortDescription":"A collection of helpers for interacting with VueJS",
+    "description":"A collection of helpers for interacting with VueJS",
+    "type":"modules",
+    "dependencies":{
+        
+    },
+    "devDependencies":{
+        "coldbox":"^4.3.0+188",
+        "testbox":"^2.4.0+80"
+    },
+    "installPaths":{
+        "testbox":"testbox",
+        "coldbox":"tests/resources/app/coldbox"
+    },
+    "scripts":{
+        "postVersion":"package set location='elpete/vue-helpers#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push && !git push --tags"
+    },
+    "ignore":[
+        "**/.*",
+        "test",
+        "tests"
+    ]
+}
