@@ -22,6 +22,12 @@ component extends="testbox.system.BaseSpec" {
                         "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]"
                     );
                 } );
+
+                it( "escapes quotes correctly in complex values", function() {
+                    expect(
+                        prop( { "description" = "LARGE CARAMEL MOTHER'S DAY HEART" } )
+                    ).toBe( "{&quot;description&quot;:&quot;LARGE CARAMEL MOTHER&##39;S DAY HEART&quot;}" );
+                } );
             } );
         } );
     }
