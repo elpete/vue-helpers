@@ -7,21 +7,18 @@ component {
     function configure() {}
 
     function onLoad() {
-        var helpers = controller.getSetting( "viewsHelper" );
-        if ( ! isArray( helpers ) ) {
-            helpers = [ helpers ];
-        }
+        var helpers = controller.getSetting( "applicationHelper" );
         arrayAppend(
             helpers,
             "#moduleMapping#/helpers/Vue.cfm"
         );
-        controller.setSetting( "viewsHelper", helpers );
+        controller.setSetting( "applicationHelper", helpers );
     }
 
     function onUnload() {
         controller.setSetting(
-            "viewsHelper",
-            arrayFilter( controller.getSetting( "viewsHelper" ), function( helper ) {
+            "applicationHelper",
+            arrayFilter( controller.getSetting( "applicationHelper" ), function( helper ) {
                 return helper != "#moduleMapping#/helpers/Vue.cfm"; 
             } )
         );
