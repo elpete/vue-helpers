@@ -14,16 +14,14 @@
     "shortDescription":"A collection of helpers for interacting with VueJS",
     "description":"A collection of helpers for interacting with VueJS",
     "type":"modules",
-    "dependencies":{
-
-    },
+    "dependencies":{},
     "devDependencies":{
-        "coldbox":"^4.3.0+188",
-        "testbox":"^2.4.0+80"
+        "coldbox":"^5.6.2+1021",
+        "testbox":"^3.1.0+339"
     },
     "installPaths":{
-        "testbox":"testbox",
-        "coldbox":"tests/resources/app/coldbox"
+        "testbox":"testbox/",
+        "coldbox":"tests/resources/app/coldbox/"
     },
     "scripts":{
         "postVersion":"package set location='elpete/vue-helpers#v`package version`'",
