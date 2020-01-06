@@ -1,8 +1,8 @@
 {
     "name":"vue-helpers",
-    "version":"1.0.2",
+    "version":"2.0.0",
     "author":"Eric Peterson",
-    "location":"elpete/vue-helpers#v1.0.2",
+    "location":"elpete/vue-helpers#v2.0.0",
     "homepage":"https://github.com/elpete/vue-helpers",
     "documentation":"https://github.com/elpete/vue-helpers",
     "repository":{
