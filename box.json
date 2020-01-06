@@ -15,7 +15,7 @@
     "description":"A collection of helpers for interacting with VueJS",
     "type":"modules",
     "dependencies":{
-        
+
     },
     "devDependencies":{
         "coldbox":"^4.3.0+188",
@@ -28,7 +28,7 @@
     "scripts":{
         "postVersion":"package set location='elpete/vue-helpers#v`package version`'",
         "onRelease":"publish",
-        "postPublish":"!git push && !git push --tags"
+        "postPublish":"!git push && git push --tags"
     },
     "ignore":[
         "**/.*",
